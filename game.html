@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        background-image: url('../assets/img/looking.png');
+        width: 40px
+        border; bottom-right
+    
+    
+        </style>
+
+     <script src="libs/howler.js"></script> 
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+   <script src="Scar.js"></script>
+   <script src="js/libraries/p5.sound.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  
+
+  </head>
+  <body>
+
+    <script src="sketch.js"></script>
+
+    <div class="container">
+       <div class="button" onclick="playSound(sound0)"></div>
+       <div class="button" onclick="playSound(sound1)"></div>
+       <div class="button" onclick="playSound(sound2)"></div>
+       <div class="button" onclick="playSound(sound3)"></div>
+    </div>
+
+
+</body>
+
+<script>
+const sound0 = new Howl({ src: 'sounds/0.mp3' });
+const sound1 = new Howl({ src: 'sounds/1.mp3' });
+const sound2 = new Howl({ src: 'sounds/2.mp3' });
+const sound3 = new Howl({ src: 'sounds/3.mp3' });
+const sound4 = new Howl({ src: 'sounds/4.mp3' });
+const soun53 = new Howl({ src: 'sounds/5.mp3' });
+console.log(sound0);
+const playSound = (sound) => {
+    sound.play();
+}
+
+</script>
+
+</html>
